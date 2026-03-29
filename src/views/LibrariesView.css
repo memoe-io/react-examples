@@ -1,0 +1,155 @@
+.libraries-view h1 {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.view-intro {
+  color: var(--text-secondary);
+  margin-bottom: 28px;
+  font-size: 15px;
+}
+
+.lib-category {
+  margin-bottom: 32px;
+}
+
+.lib-category h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--primary);
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--primary-light);
+}
+
+.lib-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.lib-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.15s;
+}
+
+.lib-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.lib-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.lib-header h3 {
+  font-size: 15px;
+  margin: 0;
+}
+
+.lib-stars {
+  font-size: 11px;
+  color: var(--text-secondary);
+  background: #fef9c3;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.lib-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.lib-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.lib-npm code {
+  font-size: 11px;
+  background: #1e293b;
+  color: #a5f3fc;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.lib-note {
+  font-size: 12px;
+  color: var(--primary);
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+/* Recommendation box */
+.recommendation-box {
+  background: var(--surface);
+  border: 2px solid var(--primary);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-top: 8px;
+}
+
+.recommendation-box h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.stack-recommendation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.stack-item {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.stack-item.must {
+  background: var(--primary);
+  color: white;
+}
+
+.stack-item.should {
+  background: var(--primary-light);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.stack-legend {
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.dot-must, .dot-should {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.dot-must {
+  background: var(--primary);
+}
+
+.dot-should {
+  background: var(--primary-light);
+  border: 1px solid var(--primary);
+}

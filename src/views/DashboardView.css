@@ -1,0 +1,85 @@
+.dashboard-view h1 {
+  font-size: 24px;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.dashboard-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.dashboard-grid {
+  min-height: 500px;
+}
+
+.dashboard-widget {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+}
+
+.dashboard-widget.editable {
+  cursor: grab;
+  border: 2px dashed var(--primary);
+}
+
+.dashboard-widget.editable:active {
+  cursor: grabbing;
+}
+
+.widget-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.widget-title {
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+.widget-drag-handle {
+  cursor: grab;
+  font-size: 16px;
+  color: #888;
+  user-select: none;
+}
+
+.widget-drag-handle:hover {
+  color: var(--primary);
+}
+
+.widget-body {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.widget-content {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Kleinere Widgets: kleinere Schrift */
+.dashboard-widget .widget-body {
+  overflow: auto;
+}
