@@ -87,7 +87,7 @@ export const ContactsView = () => {
   return (
     <div className='contacts-view'>
       <div className='view-header'>
-        <h1>Kontakte – Infinite Scroll</h1>
+        <h1>Kontakte - Infinite Scroll</h1>
         <span className='record-count'>
           {contacts.length} / {total} geladen
         </span>

@@ -7,6 +7,7 @@ import { FormDemoView } from './views/FormDemoView'
 import { HomeView } from './views/HomeView'
 import { LibrariesView } from './views/LibrariesView'
 import { StyledContactsView } from './views/StyledContactsView'
+import { VirtualScrollView } from './views/VirtualScrollView'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path='/' element={<HomeView />} />
           <Route path='/contacts' element={<ContactsView />} />
           <Route path='/styled' element={<StyledContactsView />} />
+          <Route path='/virtual' element={<VirtualScrollView />} />
           <Route path='/forms' element={<FormDemoView />} />
           <Route path='/libraries' element={<LibrariesView />} />
           <Route path='/dashboard' element={<DashboardView />} />

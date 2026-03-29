@@ -5,6 +5,7 @@ const navItems = [
   { to: '/', label: 'Home', icon: '🏠' },
   { to: '/contacts', label: 'Kontakte (Infinite Scroll)', icon: '📋' },
   { to: '/styled', label: 'Styled Grid', icon: '🎨' },
+  { to: '/virtual', label: 'Virtual Scroll', icon: '⚡' },
   { to: '/forms', label: 'Formulare', icon: '📝' },
   { to: '/dashboard', label: 'Dashboard', icon: '📊' },
   { to: '/libraries', label: 'Libraries', icon: '📦' },
